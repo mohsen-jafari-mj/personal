@@ -100,3 +100,96 @@ footer {
     background: #333;
     color: #fff;
 }
+
+.title {
+    font-style: italic;
+    font-size: 1.5em; /* Adjust size if needed */
+    color: #333; /* Adjust color if needed */
+}
+#publications {
+    margin: 20px 0; /* Add some margin to the section */
+}
+
+#publications h2 {
+    font-size: 1.8em; /* Adjust the font size for the section title */
+    margin-bottom: 10px; /* Space between the title and the first publication */
+}
+
+.publication-item {
+    margin-bottom: 15px; /* Space between each publication item */
+    padding: 10px;
+    border-left: 4px solid #4CAF50; /* Add a colored border to the left */
+    background-color: #f9f9f9; /* Light background color for the publication item */
+}
+
+.publication-item p {
+    margin: 0; /* Remove default margin */
+    font-size: 1em; /* Adjust the font size of the publication text */
+    line-height: 1.5; /* Increase line spacing for readability */
+}
+/* Portfolio section on the main page */
+#portfolio {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.portfolio-links {
+    margin-top: 10px;
+}
+
+.portfolio-button, .portfolio-download {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.portfolio-button:hover, .portfolio-download:hover {
+    background-color: #45a049;
+}
+
+/* Portfolio page styles */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section {
+    margin: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.portfolio-download img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.image-container {
+    width: 512px; /* Fixed width */
+    height: 284px; /* Fixed height */
+    overflow: hidden; /* Hide any overflow of the image */
+    position: relative; /* Position relative to control absolute positioning of the image */
+}
+
+.image-container img {
+    position: absolute; /* Position absolutely within the container */
+    top: 0;
+    left: 0;
+    width: 100%; /* Stretch to fill the container width */
+    height: 100%; /* Stretch to fill the container height */
+    object-fit: contain; /* Ensure the image covers the container without distortion */
+}

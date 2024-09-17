@@ -7,6 +7,26 @@
         <link rel="stylesheet" href="styles.css">
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            p {
+                text-indent: 30px; /* Adjust the value to control the indentation */
+            }
+            .education-container {
+            margin-bottom: 20px; /* Space after each education row */
+        }
+
+        .education-item {
+            display: inline-block; /* Use inline-block to keep items on the same line */
+            width: 300px; /* Set a fixed width for each column */
+            margin-right: 20px; /* Add some space between columns */
+            vertical-align: top; /* Align items to the top */
+        }
+
+        /* Optional: Style the text */
+        .university, .location, .major {
+            font-size: 1rem; /* Adjust font size */
+        }
+        </style>
     </head>
     <body>
     <header>
@@ -18,61 +38,110 @@
             <!-- Change the URL to your profile picture -->
             <img src="mohsen.jpg" alt="Profile Picture" class="profile-pic">
             <h1>Mohsen Jafari</h1>
-            <p>Software Engineer, Software Developer, Full-Stack Developer</p>
+            <p class="title">Software Engineer, Software Developer, Full-Stack Developer</p>
         </div>
         <nav>
             <ul>
                 <li><a href="#profile">Profile</a></li>
-                <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#awards">Awards</a></li>
-                <li><a href="#publications">Publications</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#awards">Awards</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="profile">
             <h2>Profile</h2>
-            <p>Welcome to my personal website. Here you can learn more about me and my professional background.</p>
+            <p>Welcome to my personal website. Here you can learn more about me and my professional background.<p>
+            <p> Proficient software engineer with over 15 years expertise in development, specializing in software systems design,
+optimization, and analysis. Committed to delivering high-quality work efficiently and effectively. Skilled in Software
+Development Life Cycle (SDLC), Software Engineering (SE) methodologies, and agile practices, with a track record of
+successful project management. Passionate about advancing skills in machine learning and deep learning to contribute
+to emerging technologies in computer science. Demonstrated ability to enhance user experience, lead teams, and drive
+new software product development. Possesses strong analytical thinking skills and a knack for problem-solving,
+aiming to deliver innovative software solutions. Seeking challenging opportunities to leverage experience and develop
+high-quality software. Improved comprehensive troubleshooting skills by diagnosing and resolving hardware,
+software, and network issues at multiple bank branches, ensuring prompt and efficient resolutions.
+            </p>
         </section>
         <section id="education">
             <h2>Education</h2>
-            <p><strong>Bowling Green State University</strong>, Bowling Green, OH <br>MS, Computer Science (Jan 2023 - April 2024)</p>
-            <p><strong>Ferdowsi University</strong>, MS, Information Technology Management (Sep 2015 - Jul 2017)</p>
-            <p><strong>Azad University</strong>, BS, Software Engineering (Sep 1999 - Sep 2003)</p>
-        </section>
+        <!-- First Education Item -->
+        <div class="education-container">
+            <div class="education-item university">Bowling Green State University</div>
+            <div class="education-item location">Bowling Green, OH</div>
+            <div class="education-item major">MS, Computer Science</div>
+        </div>
+        <!-- Second Education Item -->
+        <div class="education-container">
+            <div class="education-item university">Ferdowsi University</div>
+            <div class="education-item location">Mashhad, Iran</div>
+            <div class="education-item major">MS, Information Technology Management</div>
+        </div>
+        <!-- Third Education Item -->
+        <div class="education-container">
+            <div class="education-item university">Azad University</div>
+            <div class="education-item location">Tehran, Iran</div>
+            <div class="education-item major">BS, Software Engineering</div>
+        </div>
+    </section>
         <section id="experience">
             <h2>Experience</h2>
-            <h3>Graduate Research Assistant - Bowling Green State University (Aug 2023 - April 2024)</h3>
+            <h3>Graduate Research Assistant&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bowling Green State University (Aug 2023 - April 2024)</h3>
             <ul>
-                <li>Created a project aimed at classifying user reviews on Google Play using NLP techniques.</li>
-                <li>Designed and developed a system for Insurance Premium Prediction using Python.</li>
-                <li>Served as a Teaching Assistant for Python and C++ courses.</li>
+                <li>Created a project aimed at classifying user reviews on Google Play using NLP techniques to extract features from reviews.</li>
+                <li>Designed and developed a system written in Python, utilizing regression models to enhance Insurance Premium Prediction through the integration of clustering and interpretable machine learning models.</li>
+                <li>Served as a Teaching Assistant for the computer science courses, including Python and C++.</li>
             </ul>
-            <h3>Software Developer - Novin Hi-Tech Solutions (Sep 2010 - Dec 2022)</h3>
+            <h3>Software Developer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Novin Hi-Tech Solutions (Sep 2010 - Dec 2022)</h3>
             <ul>
-                <li>Developed and maintained banking software and network infrastructure.</li>
-                <li>Created "Preventive Maintenance" and "Discrepancy Finder" software.</li>
-                <li>Designed and implemented data visualizations for decision-making.</li>
+                <li>Gained extensive experience in developing and maintaining banking software, hardware, and network infrastructure.</li>
+                <li>Developed over 10 programs for banking and industrial sectors using C#, Python, C++ and various database technologies.</li>
+                <li>Created "Preventive Maintenance" and "Discrepancy Finder" software, significantly improving operational efficiency.</li>
+                <li>Designed and implemented visually appealing data visualizations for both standard and big data sets, enhancing decision-making for management.</li>
+                <li>Applied parallel programming techniques to enhance computational speed and efficiency in key projects.</li>
+                <li>Developed a multi-report application that consolidates reports from various databases and resources, providing total insights.</li>
+                <li>Modernized and upgraded the websites of several projects, incorporating new technologies and revising data structures.</li>
+                <li>Participated in projects utilizing regression models and ML techniques to predict and identify valuable customers and employees, based on features like sentiment analysis and performance indicators.</li>
+                <li>Implemented server virtualization, particularly with VMware, achieving an 80% reduction in expenses and a 33% decrease in maintenance costs compared to physical servers.</li>
+                <li>Specialized in troubleshooting and resolving IT issues across 12 bank branches, ensuring rapid and effective solutions.</li>
+
+                
             </ul>
-            <h3>Software Developer - Khorasan Ashena Afzar (Dec 2007 - Apr 2009)</h3>
+            <h3>Software Developer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Khorasan Ashena Afzar (Dec 2007 - Apr 2009)</h3>
             <ul>
-                <li>Designed and developed a cost-effective IVR-like project.</li>
-                <li>Developed a software for dynamic table-based report generation.</li>
+                <li>Contributed to designing and developing a cost-effective IVR-like project.</li>
+                <li>Achieved a project cost of $500, significantly lower than the market price of $6000.</li>
+                <li>Designed and developed a software providing an IDE for report design, utilizing company’s data.</li>
+                <li>Implemented the project using OOP principles and component-based design methodologies.</li>
+                <li>The project had the capability to design and generate dynamic table-based reports.</li>
+                <li>This project was notably innovative for its time, significantly reducing both time and costs associated with report creation by developers while empowering users with intuitive design capabilities.</li>
             </ul>
         </section>
         <section id="awards">
-            <h2>Awards</h2>
-            <p>Details about any awards or recognitions you've received.</p>
+            <h2>Awards & Scholarships</h2>
+            <p>Full Tuition Scholarship for Master of Computer Science Degree, Bowling Green State University, 2023-2024.</p>
         </section>
         <section id="publications">
             <h2>Publications</h2>
-            <p>List any publications or research papers you've authored or contributed to.</p>
+            <div class="publication-item">
+                <p><strong>Mohsen Jafari</strong>, Forough Majidi, and Abbas Heydarnoori. 
+                "Prioritizing App Reviews for Developer Responses on Google Play". 
+                <em>In Proceedings of the 30th International DMS Conference on Visualization and Visual Languages (DMSVIVA)</em>, 
+                San Francisco, USA, Oct. 2024.</p>
+            </div>
         </section>
         <section id="portfolio">
             <h2>Portfolio</h2>
-            <p>Showcase your projects or provide links to your work.</p>
+            <p>View my complete project portfolio and download the PDF version below.</p>
+            <div class="portfolio-links">
+                <a href="portfolio.html" class="portfolio-button">View Portfolio</a>
+                <a href="portfolio.pdf" class="portfolio-download" download>
+                    <img src="download.png" alt="Download Icon" /> Download PDF version
+                </a>
+            </div>
         </section>
     </main>
     <footer>
